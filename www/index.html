@@ -10,14 +10,46 @@
     <script type="text/javascript" src="motor.js">
     </script>
 </head>
-<body>
- 
-      <h1>  Tabela de Consumo </h1>
+<div>
+  <label for="quilometragem">Quilometragem percorrida:</label>
+  <input type="number" id="quilometragem">
+</div>
 
-<input type="number" step="0.001" placeholder="KM" id="km">
-<input type="number" step="0.001" placeholder="Gasolina" id="gas">
-<br></br>
-<input type="button" value="calcular" id="btnCalcular" onclick="CalcConsumo()">   
-<h2 id="resultado"></h2>
+<div>
+  <label for="litros">Quantidade de litros de combustível gastos:</label>
+  <input type="number" id="litros">
+</div>
+
+<div>
+  <button id="calcular">Calcular consumo</button>
+</div>
+
+<div>
+  <p>Consumo:</p>
+  <p id="consumo"></p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Classificação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extremamente econômico - Consumo maior que 20km/l</td>
+    </tr>
+    <tr>
+      <td>Econômico - Consumo maior que 12km/l porém menor que 20km/l</td>
+    </tr>
+    <tr>
+      <td>Normal - Consumo maior que 8km/l porém menor que 12km/l</td>
+    </tr>
+    <tr>
+      <td>Alto consumo - Consumo menor que 8km/l</td>
+    </tr>
+  </tbody>
+</table>
+
 </body>
 </html>

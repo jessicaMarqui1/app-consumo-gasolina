@@ -4,8 +4,8 @@ table {
 }
 
 th {
-  background-color: rgb(51, 51, 51);
-  color: #fff;
+  background-color:  #85a2ff;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: left;
 }
@@ -20,7 +20,7 @@ td, th {
 }
 
 tr:hover {
-  background-color: rgb(126, 248, 242);
+  background-color: #85a2ff;
 }
 body{
     background-color: rgba(0, 132, 255, 0.253);

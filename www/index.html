@@ -1,59 +1,45 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <script src="components/loader.js"></script>
-    <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="motor.js">
-    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo</title>
+    <link rel="stylesheet" href="./loader.css">
 </head>
 <body>
+<div class="centro">
+        <h1 >Consumo </h1>
 
-    <p><h1>CONSUMO MÉDIO</h1></p>
+  <p><h2> Digite o modelo:</h2></p>
+        <select class="marca" id="marca">
+            <option value="Ford">Ford</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="VW">VW</option>
+                    </select>
+                 
+            <input type="text" placeholder="Digite aqui" id="modelo">
+            <br></br>
+            <p><h2> Digite o o km:</h2></p>
+            <input type="text" placeholder="Digite aqui" id="km">
+            <br>
 
-<div>
-  <label for="quilometragem">Quilometragem percorrida:</label><br>
-  <input type="number" id="quilometragem">
-</div>
-<br>
-<div>
-  <label for="litros">Quantidade de litros de combustível gastos:</label><br>
-  <input type="number" id="litros">
-</div>
-<br>
-<div>
-  <button id="calcular">Calcular</button>
-</div>
+            <p><h2> Digite a gasolina:</h2></p>
+            <input type="text" placeholder="Digite aqui" id="gaso">
+            <br></br>
 
-<div>
-  <p><h2>Consumo:</h2></p>
-  <p id="consumo"></p>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Classificação</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Extremamente econômico - Consumo maior que 20km/l</td>
-    </tr>
-    <tr>
-      <td>Econômico - Consumo maior que 12km/l porém menor que 20km/l</td>
-    </tr>
-    <tr>
-      <td>Normal - Consumo maior que 8km/l porém menor que 12km/l</td>
-    </tr>
-    <tr>
-      <td>Alto consumo - Consumo menor que 8km/l</td>
-    </tr>
-  </tbody>
-</table>
-
+        
+            <input type="button" value="CALCULAR" onclick="calcConsumo()">
+        <span id="consumo"></span>
+            <div class="caixa">
+                    <p id="paragraph1">Consumo maior que 20km/l - Extremamente econômico</p>
+                    <p id="paragraph2">Consumo maior que 12km/l porém menor que 20km/l - Econômico</p>
+                    <p id="paragraph3">Consumo maior que 8km/l porém menor que 12km/l - Normal</p>
+                    <p id="paragraph4">Consumo menor que 8km/l - Alto Consumo</p>
+    </div>
+    </div>
+    <script src="./Motor.js"></script>
 </body>
 </html>
